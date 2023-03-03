@@ -55,10 +55,11 @@ The graph of $g$ looks as follows from the points above
 > [!ABSTRACT]+ The Fundamental Theorem of Calculus, Part 1
 > If $f$ is a continuous function on $[a,b]$, then the function $g$ is defined by
 > $$g(x) = \int^x_af(t)dt \quad a \le x \le b$$
-> is continuous on $[a,b]$ and differentiable on $(a,b)$, and $g\prime(x) = f(x)$.
+> is continuous on $[a,b]$ and differentiable on $(a,b)$, and $g^\prime(x) = f(x)$.
 > 
 >- The abbreviation for this theorem is FTC1.
 >- The derivative of a definite integral with respect to its upper limit is the integrand evaluated at the upper limit.
+
 #### Leibniz Notation for FTC1
 $${\mathrm{d}\over\mathrm{dx}}\int^x_af(t)\mathrm{dx} = f(x)$$
 
@@ -84,3 +85,65 @@ g(6)&=g(3) + \left(-{1\over2}\right) + \left(-{3\over2}\right) + (-12)\\
 ####
 - $g(x)$ is increasing on the interval $[0,3]$
 - $g(x)$ has a maximum value at $x=3$
+
+## Fundamental Theorem of Calculus Part 2
+
+### Definition
+
+>[!ABSTRACT]+ The Fundamental Theorem of Calculus Part 2
+>If $f$ is continuous on $[a,b]$, then
+>$$
+>\int^b_af(x)dx = F(b) - F(a)
+>$$
+>where $F$ is _any_ antiderivative of $f$, that is, a function $F$ such that $F^\prime = f$.
+
+In essence, if we know an antiderivative $F$ of $f$, we can evaluate $\int^b_af(x)dx$ ==simply by subtracting the values of $F$ at the endpoints of the interval $[a,b]$.==
+
+### Proof
+
+Let $g(x) = \int^x_af(t)\ dt$. By [[The Fundamental Theorem of Calculus#Fundamental Theorem of Calculus Part 1#Definition|FTC1]], we know $g^\prime(x)=f(x)$ - $g$ is an antiderivative of $f$.
+
+Let $F(x)$ be any antiderivative of $f$ on $[a,b]$. ==$F$ and $g$ will differ by a constant==
+$$
+g(x) = F(x) + C
+$$
+Let $x=a$ and $x=b$
+$$\begin{align}
+g(a)&=F(a)+C\\
+\\
+g(a) &= \int^a_af(t)dt\\
+&= 0\\
+\\
+0 &= F(a) + C\\
+C &= -F(a)\\
+\\
+g(x) &= F(x) + C\\
+&= F(x) - F(a)\\
+\\
+g(b) &= \int^b_af(t)dt=g(b)-g(a)\\
+&= F(b) - F(a)\\
+\\
+&\square
+\end{align}$$
+
+
+
+
+### Example
+Evaluate the integral
+$$
+\int^3_1e^xdx
+$$
+
+- $e^x$ is continuous everywhere
+- The antiderivative $F$ of $f(x) = e^x$ is $e^x$
+
+By [[The Fundamental Theorem of Calculus#Fundamental Theorem of Calculus Part 2#Definition|FTC2]], we get $\int^3_1e^xdx = F(3) - F(1) = e^3 - e^1$.
+$\square$
+
+Compared to [[The Definite Integral#Example 1|evaluating the Riemann Sum]], using FTC2 is much more straightforward.
+
+This can also be expressed by
+$$
+\int^3_1e^xdx=\left.e^x\right|_1^3=e^3-e
+$$
