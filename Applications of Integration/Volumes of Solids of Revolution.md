@@ -1,7 +1,7 @@
 - A **solid of revolution** is obtained by revolving a region about a line.
 - Solid, cross-sections perpendicular to the axis of rotation are circular.
 
-## Prodcedure in General
+## Procedure in General
 
 The volume of a solid of revolution is calculated by
 $$V = \int_a^bA(x)\ dx$$or $$V = \int_c^dA(y)\ dy$$

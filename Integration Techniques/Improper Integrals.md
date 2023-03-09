@@ -1,9 +1,9 @@
-# Type 1 - Infinte Intervals
+# Type 1 - Infinite Intervals
 
 - a and/or b is unbounded:
 	- $\int_b^{-\infty}f(x)\ dx$
 
-- Determining convergence or divergence finds wether the integral is finite.
+- Determining convergence or divergence finds whether the integral is finite.
 
 >[!Definition] Improper Integral of Type 1
 >1. If $\int_a^t f(x)\ dx$ exists for all $t \ge a$, then

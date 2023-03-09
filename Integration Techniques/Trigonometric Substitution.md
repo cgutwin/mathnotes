@@ -1,4 +1,4 @@
-## Solving in General
+	## Solving in General
 
 1. Look for an expression in the integral from the table of substitutions
 2. Let x be the substitution, and factor out the a value

@@ -1,4 +1,4 @@
-``## Formula for Integration By Parts
+## Formula for Integration By Parts
 
 >[!abstract] Formula A
 >$$

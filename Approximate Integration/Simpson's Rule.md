@@ -21,7 +21,7 @@ f(x) &= {1\over x} \qquad n=10 \qquad\Delta x={2-1\over10}={1\over10}\\
 \end{align}$$
 
 ## Example 2
-The graph of the acceleration $a(t)$ of a car, measured in $\text{ft/s}^2$ is shown. Use Simpson’s Rule to estimate the increase in the velocity of the car during the six-second time interval. 37.7ft/s
+The graph of the acceleration $a(t)$ of a car, measured in $\text{ft/s}^2$ is shown. Use Simpson’s Rule to estimate the increase in the velocity of the car during the six-second time interval.
 ![[ddde_0001_0001_0_img1627-t2.png|center]]
 - Make sure the units are consistent
 	- Let $d$ be measured in feet
@@ -42,3 +42,5 @@ $$\begin{align}
 \end{align}$$
 
 The increase of velocity of the car over the six-second interval is approximately 38$\text{ft/s}$.
+
+- The answer given was 37.7ft/s. This is down to a more accurate approximation of each subinterval's $f(x_i^*)$.

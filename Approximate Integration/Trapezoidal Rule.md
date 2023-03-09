@@ -14,7 +14,7 @@ $$\begin{align}
 ## Example 01
 Approximate the integral $\int_1^2({1\over x})\ dx$ with $n = 5$. 
 
-### Trapezoidal Rule
+### Using Trapezoidal Rule
 
 $$\begin{align}
 n=5\\
@@ -30,7 +30,7 @@ b=2\\
 &\approx0.695635
 \end{align}$$
 ![[xu9juk4l.bmp|center]]
-### Midpoint Rule
+### Using Midpoint Rule
 The midpoints of the five subintervals are 1.1, 1.3, 1.5, 1.7, and 1.9. By the [[The Midpoint Rule]]:
 
 $$\begin{align}
@@ -39,5 +39,5 @@ $$\begin{align}
 &\approx 0.691908
 \end{align}$$
 ![[x2oyhe5m.bmp|center]]
-###
+### Summary
 In this example, the trapezoidal estimate is larger than the midpoint estimate. We know $\int_1^2{1\over x}dx = \ln 2 \approx 0.693147$. The trapezoidal rule is an overestimate and the midpoint rule is an underestimate.
