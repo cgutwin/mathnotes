@@ -2,6 +2,20 @@
 - Possible to reverse in constant time: see [[#Doubly-Linked Lists#Reversal in Constant Time]]
 	- Need to use a doubly-linked list.
 
+|Operation|Linked List|Double Linked List|
+|-|-|-|
+|get/set| O(N)| O(N)|
+|Find element|O(N)|O(N)|
+|Insert at beginning|O(1)|O(1)|
+|Insert at end|O(1)|O(1)|
+|Insert in middle|O(1)|O(1)|
+|Remove from middle|==O(N)==|==O(1)==|
+| Remove from beginning|O(1)|O(1)|
+|Remove from end|==O(N)==|==O(1)==|
+
+
+
+
 ## Common Methods
 ### Inserts at Head
 Inserts at head need to make the new head point to the old head.
@@ -146,7 +160,7 @@ Swap the the next and previous pointers of each node in the list, then swap the 
 #### Code
 ```java
 public void reverse() {  
-	// Start from the head of the subtree.
+	// Start from the head of the list.
     Node current = head;
     
     // While the list is not at the end
